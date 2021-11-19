@@ -42,6 +42,11 @@ const CheckoutPage = ({ cartItems, total }) => {
       </div>
 
       <StripeCheckoutButton price={total} />
+
+      <div className="credit-card-data">
+        <h3>Use the following data for credit card payments:</h3>
+        <h3>4242 4242 4242 4242 - Exp: 01/23 - CW: 123</h3>
+      </div>
     </S.CheckoutPage>
   );
 };
