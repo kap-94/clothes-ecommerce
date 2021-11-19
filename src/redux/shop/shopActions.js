@@ -21,12 +21,6 @@ export const fetchCollectionStartAsync = () => {
         dispatch(fetchCollectionSuccess(collectionsMap));
       })
       .catch((error) => dispatch(fetchCollectionError(error.message)));
-
-    // collectionRef.onSnapshot(async (snapshot) => {
-    //   const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-    //   updateCollections(collectionsMap);
-    //   this.setState({ loading: false });
-    // }); // onSnapshot runs whenever the collection updates or runs for the first time
   };
 };
 

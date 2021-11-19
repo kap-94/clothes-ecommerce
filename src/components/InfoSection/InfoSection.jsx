@@ -1,7 +1,7 @@
 import React from "react";
 
 import HomeImage from "../HomeImage/HomeImage.jsx";
-import { CustomButton } from "../CustomButton/CustomButton";
+import { CustomLinkButton } from "../CustomLinkButton/CustomLinkButton";
 
 import * as S from "./InfoSection.styles";
 
@@ -26,7 +26,7 @@ const InfoSection = ({
               <S.Heading lightText={lightText}>{headLine}</S.Heading>
               <S.Subtitle darkText={darkText}>{description}</S.Subtitle>
               <S.BtnWrap>
-                <CustomButton>{buttonLabel}</CustomButton>
+                <CustomLinkButton to="/shop">{buttonLabel}</CustomLinkButton>
               </S.BtnWrap>
             </S.TextWrapper>
           </S.Column1>

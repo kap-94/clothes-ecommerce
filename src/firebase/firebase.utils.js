@@ -3,13 +3,12 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCmBpzps4Yz0VJ07U_rpJ8WjKRCXvPzSvc",
-  authDomain: "flinsky-dinsky-app.firebaseapp.com",
-  projectId: "flinsky-dinsky-app",
-  storageBucket: "flinsky-dinsky-app.appspot.com",
-  messagingSenderId: "666228622175",
-  appId: "1:666228622175:web:2a2383156115fc6ca0acea",
-  measurementId: "G-FXX8D6Z7WZ",
+  apiKey: "AIzaSyC5sPmIhiH31TMo9K3RzDS-A2znnTnm0qk",
+  authDomain: "clothes-app-41501.firebaseapp.com",
+  projectId: "clothes-app-41501",
+  storageBucket: "clothes-app-41501.appspot.com",
+  messagingSenderId: "200558532456",
+  appId: "1:200558532456:web:e6ce9efe09f14523f968dd",
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -37,16 +36,11 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 };
 
-// export const addValueToCollectionItems = async (collectionKey, value) => {
-
-// }
-
 export const addCollectionAndDocuments = async (
   collectionKey,
   objectsToAdd
 ) => {
   const collectionRef = firestore.collection(collectionKey);
-
   const batch = firestore.batch();
 
   objectsToAdd.forEach((obj) => {
