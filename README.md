@@ -1,11 +1,11 @@
 <h1 align="center">
--</h1>
+E-commerce App</h1>
 <p align="center">
   The first version of <a href="https://clothes-app.herokuapp.com/" target="_blank">clothes-app.herokuapp.com</a> built with <a href="https://www.reactjs.org/" target="_blank">React</a> and hosted with <a href="https://www.heroku.com/" target="_blank">Heroku</a>
 </p>
 
 
-![](src/images/ecommerce-screenshot.png)
+![](src/assets/ecommerce-screenshot.png)
 
 ## Description
 
